@@ -1,5 +1,23 @@
 @import "./variables";
 
+.slick-prev {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    background: none;
+    border-style: none;
+    z-index: 11;
+}
+
+.slick-next {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    background: none;
+    border-style: none;
+    z-index: 11;
+}
+
 .div-one {
     background-image: url("../image/image-one.jfif");
 }
@@ -30,8 +48,16 @@
     }
 }
 
-nav {
+.navbar {
+    position: absolute;
+    width: 100%;
     background-color: transparent;
+    z-index: 10;
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 a {
@@ -40,8 +66,21 @@ a {
     background-color: transparent;
     
     &:hover {
-        color: $white;
+        color: $grey;
         text-decoration: none;
         background-color: transparent;
     }
+}
+
+.profileImg {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    font-size: 13px;
+}
+
+:root {
+    --animate-delay: 2s;
 }
