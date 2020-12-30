@@ -1,5 +1,71 @@
 @import "./variables";
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $grey;
+}
+
+li, a, button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.brand-text {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+
+    li {
+        // display: inline-block; // inline-block conflict with float: left
+        padding: 30px 20px 0px 20px;
+        float: left;
+        height: 50px; // height needs to be adjusted.
+
+        &:hover ul ol {
+            display: block;
+        }
+
+        a {
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                color: #0088a9;
+            }
+        }
+    }
+
+    ul ol {
+        display: none;
+    }
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+}
+
 .slick-prev {
     position: absolute;
     top: 40%;
@@ -48,35 +114,24 @@
     }
 }
 
-.navbar {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-    z-index: 10;
-}
+// old navbar and nav-item css for bootstrap overwrite
+// .navbar {
+//     position: absolute;
+//     width: 100%;
+//     background-color: transparent;
+//     z-index: 10;
+// }
 
-.nav-item {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+// .nav-item {
+//     padding-left: 20px;
+//     padding-right: 20px;
+// }
 
 .main-title {
     text-align: center;
 }
 
-a {
-    color: $black;
-    text-decoration: none;
-    background-color: transparent;
-    
-    &:hover {
-        color: $grey;
-        text-decoration: none;
-        background-color: transparent;
-    }
-}
-
-.introduction, .artistlist {
+.introduction, .artistlist, .contactus {
     margin-top: 50px;
 }
 

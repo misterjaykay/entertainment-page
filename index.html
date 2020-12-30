@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- this needs to be filled -->
     <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -17,34 +20,57 @@
 <body>
 
     <!-- Navbar Starts -->
-    <nav class="navbar navbar-expand-lg">
-        <span class="navbar-brand mb-0 h1">Entertainment</span>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="artistList" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Artists
-                </a>
-                <div class="dropdown-menu" aria-labelledby="artistList">
-                    <a class="dropdown-item" href="#firstArtist">아이유</a>
-                    <a class="dropdown-item" href="#secondArtist">휘인</a>
-                    <a class="dropdown-item" href="#thirdArtist">태연</a>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <!-- <nav class="navbar navbar-expand-lg">
+            <span class="navbar-brand mb-0 h1">Entertainment</span>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="artistList" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Artists
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="artistList">
+                        <a class="dropdown-item" href="#firstArtist">아이유</a>
+                        <a class="dropdown-item" href="#secondArtist">휘인</a>
+                        <a class="dropdown-item" href="#thirdArtist">태연</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </nav> -->
+        <span class="brand-text">Entertainment Logo</span>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Artists</a>
+                    <ul>
+                        <ol><a href="#firstArtist">아이유</a></ol>
+                        <ol><a href="#secondArtist">휘인</a></ol>
+                        <ol><a href="#thirdArtist">태연</a></ol>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a class="cta" href="#contact"><button>Contact</button></a>
+    </header>
     <!-- Navbar Ends -->
 
+
+
     <!-- Slider Starts -->
-    <div class="my-slider">
+
+    <!-- slider currently have conflict with navbar coming down.
+     -->
+
+    <!-- <div class="my-slider">
         <div class="div-one">
             <p class="animate__animated animate__fadeIn">
                 Artist. 01
@@ -68,7 +94,8 @@
                 태연
             </p>
         </div>
-    </div>
+    </div> -->
+
     <!-- Slider Ends -->
 
     <!-- Company Text Starts -->
@@ -382,10 +409,20 @@
                     </div>
                 </div>
             </section>
-
         </article>
     </div>
     <!-- Artist Bio Ends -->
+
+    <!-- Contact Form Starts -->
+    <div class="container contactus" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="main-title">Contact Form</h2>
+                <p>Contact us</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form Ends -->
 
     <!-- Footer Starts -->
     <footer>
